@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: E:/Users/hungi/Desktop/Unity crap/Button/Packages/manifest.json
+    m_FilePath: C:/Users/Banan/Desktop/School Stuff/projects/1-1/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638932264213423197
-    m_Hash: 1626081779
+      ticks: 638937588541626592
+    m_Hash: 846971837
   m_LockFileStatus:
-    m_FilePath: E:/Users/hungi/Desktop/Unity crap/Button/Packages/packages-lock.json
+    m_FilePath: C:/Users/Banan/Desktop/School Stuff/projects/1-1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638932264213500457
-    m_Hash: 2914417784
+      ticks: 638937588541626592
+    m_Hash: 2266572820
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: E:/Users/hungi/Desktop/Unity crap/Button/Packages
+m_ProjectPath: C:/Users/Banan/Desktop/School Stuff/projects/1-1/Packages
 m_EditorVersion: 6000.2.2f1 (ea398eefe1c2)
 m_ResolvedPackages:
 - packageId: com.unity.2d.animation@12.0.2
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 12.0.2
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.animation@34e0443c58ed
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.animation@34e0443c58ed
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -289,7 +289,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.1
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.aseprite@f6e7e126ac6d
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.aseprite@f6e7e126ac6d
   assetPath: Packages/com.unity.2d.aseprite
   name: com.unity.2d.aseprite
   displayName: 2D Aseprite Importer
@@ -329,10 +329,12 @@ m_ResolvedPackages:
     - 1.2.5
     - 2.0.0
     - 2.0.1
+    - 2.0.2
     - 3.0.0
     compatible:
     - 2.0.1
-    recommended: 2.0.1
+    - 2.0.2
+    recommended: 2.0.2
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
@@ -435,7 +437,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 11.0.1
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.psdimporter@0adcab25a8fd
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.psdimporter@0adcab25a8fd
   assetPath: Packages/com.unity.2d.psdimporter
   name: com.unity.2d.psdimporter
   displayName: 2D PSD Importer
@@ -640,7 +642,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.sprite@331abd9a1e2f
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.sprite@331abd9a1e2f
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -720,7 +722,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 12.0.1
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.spriteshape@1d246726c231
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.spriteshape@1d246726c231
   assetPath: Packages/com.unity.2d.spriteshape
   name: com.unity.2d.spriteshape
   displayName: 2D SpriteShape
@@ -932,7 +934,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.tilemap@ba4a6b72f451
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.tilemap@ba4a6b72f451
   assetPath: Packages/com.unity.2d.tilemap
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
@@ -1031,7 +1033,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 5.0.1
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.tilemap.extras@2338d989ff2a
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.tilemap.extras@2338d989ff2a
   assetPath: Packages/com.unity.2d.tilemap.extras
   name: com.unity.2d.tilemap.extras
   displayName: 2D Tilemap Extras
@@ -1191,7 +1193,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.9.3
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -1370,7 +1372,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.36
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.ide.rider@4d374c7eb6db
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.ide.rider@4d374c7eb6db
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -1433,11 +1435,14 @@ m_ResolvedPackages:
     - 3.0.35
     - 3.0.36
     - 3.0.37
+    - 3.0.38
     compatible:
     - 3.0.36
     - 3.0.37
-    recommended: 3.0.37
-    deprecated: []
+    - 3.0.38
+    recommended: 3.0.38
+    deprecated:
+    - 3.0.37
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -1500,7 +1505,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.23
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.ide.visualstudio@198cdf337d13
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.ide.visualstudio@198cdf337d13
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1616,7 +1621,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.14.2
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.inputsystem@be6c4fd0abf5
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.inputsystem@be6c4fd0abf5
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -1774,7 +1779,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -1870,7 +1875,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.2.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.render-pipelines.universal@a2829103b3d4
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.render-pipelines.universal@a2829103b3d4
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal Render Pipeline
@@ -1997,7 +2002,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.5.1
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.test-framework@a6f5be5f149c
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.test-framework@a6f5be5f149c
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -2087,7 +2092,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.9
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.timeline@6b9e48457ddb
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.timeline@6b9e48457ddb
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -2285,7 +2290,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.ugui@754dbde2be27
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.ugui@754dbde2be27
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -2381,7 +2386,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.7
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.visualscripting@6279e2b7c485
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.visualscripting@6279e2b7c485
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -5279,7 +5284,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.ext.nunit@031a54704bff
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.ext.nunit@031a54704bff
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -5359,7 +5364,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.2.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.render-pipelines.core@5e056b397fc0
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.render-pipelines.core@5e056b397fc0
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Scriptable Render Pipeline Core
@@ -5485,7 +5490,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.2.0
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.shadergraph@287dd3fa176c
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.shadergraph@287dd3fa176c
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5601,7 +5606,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal Render Pipeline Config
@@ -5709,7 +5714,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 11.0.1
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.2d.common@dd402daace1b
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.2d.common@dd402daace1b
   assetPath: Packages/com.unity.2d.common
   name: com.unity.2d.common
   displayName: 2D Common
@@ -5885,7 +5890,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.2
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.mathematics@8017b507cc74
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -5984,7 +5989,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.5.7
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.collections@d49facba0036
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.collections@d49facba0036
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -6174,7 +6179,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.3
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.searcher@1e17ce91558d
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.searcher@1e17ce91558d
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -6271,7 +6276,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.24
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.burst@f7a407abf4d5
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.burst@f7a407abf4d5
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -6425,9 +6430,11 @@ m_ResolvedPackages:
     - 1.8.22
     - 1.8.23
     - 1.8.24
+    - 1.8.25
     compatible:
     - 1.8.24
-    recommended: 1.8.24
+    - 1.8.25
+    recommended: 1.8.25
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -6504,7 +6511,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.1
   source: 2
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.rendering.light-transport@2c9279f90d7c
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.rendering.light-transport@2c9279f90d7c
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -6610,7 +6617,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.5
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -6703,7 +6710,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.1.0
   source: 1
-  resolvedPath: E:\Users\hungi\Desktop\Unity crap\Button\Library\PackageCache\com.unity.test-framework.performance@92d1d09a72ed
+  resolvedPath: C:\Users\Banan\Desktop\School Stuff\projects\1-1\Library\PackageCache\com.unity.test-framework.performance@92d1d09a72ed
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -6770,8 +6777,10 @@ m_ResolvedPackages:
     - 3.0.2
     - 3.0.3
     - 3.1.0
+    - 3.2.0
     compatible:
     - 3.1.0
+    - 3.2.0
     recommended: 3.1.0
     deprecated: []
   dependencies:
