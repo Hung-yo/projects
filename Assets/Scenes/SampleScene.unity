@@ -350,26 +350,16 @@ GameObject:
   m_Component:
   - component: {fileID: 678122195}
   - component: {fileID: 678122194}
-  - component: {fileID: 678122193}
+  - component: {fileID: 678122197}
+  - component: {fileID: 678122199}
+  - component: {fileID: 678122198}
   m_Layer: 0
-  m_Name: bacon
+  m_Name: Meatball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &678122193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678122192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cec141dcf8c40c4c890286fcfba5989, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SendMessage
 --- !u!212 &678122194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -417,7 +407,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2868545619943879554, guid: aa75dcb86ab3bb946afd9749ce408737, type: 3}
+  m_Sprite: {fileID: -67524164670993050, guid: f757431eba6659343aab77e6f844491d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -443,6 +433,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678122197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678122192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb2c4ccb6ef5045886f228764a7317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuitGame
+--- !u!114 &678122198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678122192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4c99a3a96833e4aa05baf162b26f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  printKey: 30
+--- !u!114 &678122199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678122192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8cc938a622fe5468da8c1206ee38e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementController
+  teleportKey: 1
 --- !u!1 &1884020080
 GameObject:
   m_ObjectHideFlags: 0
