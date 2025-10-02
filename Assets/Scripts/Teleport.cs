@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Teleport : MonoBehaviour
 {
-    public Key teleportKey;
+    public KeyCode teleportKey;
+    public float teleportRange = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,9 +14,9 @@ public class Teleport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current[teleportKey].isPressed)
+        if (Input.GetKeyDown(teleportKey))
         {
-            float randomX = Random.Range(-10f, 10f);
+            float randomX = Random.Range(-1 * teleportRange, teleportRange);
             transform.position = new Vector3(randomX, 0, 0);
         }
     }
