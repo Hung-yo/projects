@@ -398,6 +398,9 @@ GameObject:
   - component: {fileID: 1717327087}
   - component: {fileID: 1717327091}
   - component: {fileID: 1717327090}
+  - component: {fileID: 1717327093}
+  - component: {fileID: 1717327094}
+  - component: {fileID: 1717327095}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -421,6 +424,8 @@ MonoBehaviour:
   moveSpeed: 6
   rotationSpeed: 230
   worldSpaceSpeed: 1
+  health: {fileID: 0}
+  death: {fileID: 0}
 --- !u!212 &1717327088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -520,6 +525,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ddb2c4ccb6ef5045886f228764a7317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuitGame
+--- !u!114 &1717327093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717327086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb1de8707616f845bd57d0d904bb9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxHealth: 10
+  currentHealth: 10
+--- !u!114 &1717327094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717327086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fda86714baa4e45baf7be1bbff48d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathTests
+  pawnToTest: {fileID: 0}
+--- !u!114 &1717327095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717327086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62670f19e5d21d4db9dff35d3adf4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathRecenter
 --- !u!1 &1884020080
 GameObject:
   m_ObjectHideFlags: 0
