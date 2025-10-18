@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class Meteor : MonoBehaviour
@@ -10,12 +9,16 @@ public class Meteor : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        pawn = GameManager.gameManager.pawn;
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoveTowards(pawn);
+        if (pawn != null)
+        {
+            MoveTowards(pawn);
+        }
     }
 
     public void MoveTowards(Vector3 pointToMoveTowards)

@@ -15,6 +15,12 @@ public class DeathDestroy : Death
     }
     public override void Die()
     {
+        DeathEvent();
         Destroy(gameObject);
+    }
+
+    public virtual void DeathEvent()
+    {
+        Debug.Log("Death event triggered");
     }
 }

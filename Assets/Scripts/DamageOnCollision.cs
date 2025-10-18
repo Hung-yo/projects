@@ -1,13 +1,18 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DamageOnCollision : MonoBehaviour
 {
     public int damageAmount = 1;
+    public bool isObstacle = false;
     public bool hasCollided = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (isObstacle)
+        {
+            GameManager.gameManager.obstacleList.Add(this);
+        }
     }
 
     // Update is called once per frame
@@ -15,11 +20,11 @@ public class DamageOnCollision : MonoBehaviour
     {
         if (hasCollided)
         {
-            Destroy(gameObject);
+            OnDestroy();
         }
     }
 
-    void OnTriggerEnter2D (Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Hit " + other.gameObject.name);
         Health otherHealth = other.gameObject.GetComponent<Health>();
@@ -27,9 +32,19 @@ public class DamageOnCollision : MonoBehaviour
         {
             otherHealth.TakeDamage(damageAmount);
             hasCollided = true;
-        } else
+        }
+        else
         {
             Debug.Log(other.gameObject.name + " has no health component.");
         }
+    }
+    
+    void OnDestroy()
+    {
+        if (isObstacle)
+        {
+            GameManager.gameManager.obstacleList.Remove(this);
+        }
+        Destroy(gameObject);
     }
 }
