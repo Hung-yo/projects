@@ -5,6 +5,7 @@ public class Meteor : MonoBehaviour
     public Pawn pawn;
     public float moveSpeed;
     public bool hasCollided = false;
+    // public float rotationSpeed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +16,7 @@ public class Meteor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pawn != null)
+        if (pawn != null && GameManager.isPaused == false)
         {
             MoveTowards(pawn);
         }

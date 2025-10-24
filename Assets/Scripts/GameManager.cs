@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,7 +7,12 @@ public class GameManager : MonoBehaviour
     public static GameManager gameManager;
     public List<DamageOnCollision> obstacleList;
     public Pawn pawn;
-    public bool gameOver = false;
+    public static bool gameOver = false;
+    public static bool isPaused = false;
+    public GameObject pauseMenuUI;
+    public GameObject titleScreenUI;
+    public GameObject scoreManagerUI;
+    public static float score;
     void Awake()
     {
         if (gameManager == null)
@@ -24,13 +30,14 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        pauseMenuUI.SetActive(false);
+        titleScreenUI.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (obstacleList.Count == 0 && !gameOver && pawn != null) 
+        if (obstacleList.Count == 0 && !gameOver && pawn != null)
         {
             Debug.Log("Victory!");
             gameOver = true;
@@ -42,5 +49,39 @@ public class GameManager : MonoBehaviour
             gameOver = true;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                UnpauseGame();
+
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
     }
+
+    public static void IncreaseScore()
+    {
+        score++;
+        gameManager.scoreManagerUI.GetComponent<ScoreManager>().UpdateScore();
+    }
+
+    public void UnpauseGame()
+    {
+        pauseMenuUI.SetActive(false);
+        isPaused = false;
+    }
+    public void PauseGame()
+    {
+        pauseMenuUI.SetActive(true);
+        isPaused = true;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
