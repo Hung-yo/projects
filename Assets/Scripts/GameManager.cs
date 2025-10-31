@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject titleScreenUI;
     public GameObject scoreManagerUI;
+    public static AudioSource backgroundMusic;
+    public AudioListener gameOverAudioListener;
     public static float score;
     void Awake()
     {
@@ -30,6 +32,8 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        backgroundMusic = GetComponent<AudioSource>();
+        gameOverAudioListener.enabled = false;
         pauseMenuUI.SetActive(false);
         titleScreenUI.SetActive(true);
     }
@@ -46,6 +50,7 @@ public class GameManager : MonoBehaviour
         if (pawn == null && !gameOver)
         {
             Debug.Log("Failure");
+            gameOverAudioListener.enabled = true;
             gameOver = true;
         }
 

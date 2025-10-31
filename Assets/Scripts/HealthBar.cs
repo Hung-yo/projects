@@ -5,8 +5,6 @@ public class HealthBar : Health
 {
     public Health health;
     public GameObject healthImage;
-    private float fillAmount;
-    private float healthPercent;
     private float initialScaleX;
     private Vector3 initialPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,7 +30,6 @@ public class HealthBar : Health
             scale.x = initialScaleX * healthPercent;
             healthImage.transform.localScale = scale;
 
-            // Adjust position so left side stays fixed
             Vector3 pos = initialPosition;
             pos.x = initialPosition.x - (initialScaleX * (1 - healthPercent) * 0.5f);
             healthImage.transform.localPosition = pos;

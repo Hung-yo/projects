@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DeathDestroy : Death
 {
+    public AudioSource deathClip;
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,5 +24,9 @@ public class DeathDestroy : Death
     public virtual void DeathEvent()
     {
         Debug.Log("Death event triggered");
+        if (deathClip != null)
+        {
+            AudioSource.PlayClipAtPoint(deathClip.clip, transform.position);
+        }
     }
 }
