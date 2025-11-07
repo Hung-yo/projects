@@ -9,12 +9,19 @@ public class GameManager : MonoBehaviour
     public Pawn pawn;
     public static bool gameOver = false;
     public static bool isPaused = false;
+    public static bool isGameStarted = false;
     public GameObject pauseMenuUI;
     public GameObject titleScreenUI;
     public GameObject scoreManagerUI;
+    public GameObject gameplayUI;
+    public GameObject creditsUI;
+    public GameObject victoryUI;
+    public GameObject gameOverUI;
     public static AudioSource backgroundMusic;
     public AudioListener gameOverAudioListener;
     public static float score;
+    public static int lives;
+    public static int timeRemaining;
     void Awake()
     {
         if (gameManager == null)
@@ -36,21 +43,23 @@ public class GameManager : MonoBehaviour
         gameOverAudioListener.enabled = false;
         pauseMenuUI.SetActive(false);
         titleScreenUI.SetActive(true);
+        gameplayUI.SetActive(false);
+        creditsUI.SetActive(false);
+        victoryUI.SetActive(false);
+        gameOverUI.SetActive(false);
+        score = 0;
+        lives = 1;
+        timeRemaining = 60;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (obstacleList.Count == 0 && !gameOver && pawn != null)
-        {
-            Debug.Log("Victory!");
-            gameOver = true;
-        }
-
         if (pawn == null && !gameOver)
         {
             Debug.Log("Failure");
             gameOverAudioListener.enabled = true;
+            gameOverUI.SetActive(true);
             gameOver = true;
         }
 
@@ -68,10 +77,40 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void IncreaseScore()
+    public static void IncreaseScore(int amount)
     {
-        score++;
+        score += amount;
         gameManager.scoreManagerUI.GetComponent<ScoreManager>().UpdateScore();
+    }
+
+    public void StartGame()
+    {
+        isGameStarted = true;
+        titleScreenUI.SetActive(false);
+        gameplayUI.SetActive(true);
+        StartCoroutine(StartTimer());
+    }
+
+    private System.Collections.IEnumerator StartTimer()
+{
+    while (timeRemaining > 0 && !gameOver)
+    {
+        yield return new WaitForSeconds(1f);
+        if (!isPaused)
+        {
+            timeRemaining--;
+        }
+    }
+    if (timeRemaining == 0)
+    {
+        Victory();
+    }
+}
+    public void Victory()
+    {
+        Debug.Log("Victory!");
+        victoryUI.SetActive(true);
+        gameOver = true;
     }
 
     public void UnpauseGame()
@@ -84,6 +123,17 @@ public class GameManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         isPaused = true;
     }
+
+    public void DisplayCredits()
+    {
+        creditsUI.SetActive(true);
+    }
+
+    public void HideCredits()
+    {
+        creditsUI.SetActive(false);
+    }
+
     public void QuitGame()
     {
         Application.Quit();

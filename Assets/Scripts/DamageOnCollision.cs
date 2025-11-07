@@ -7,6 +7,7 @@ public class DamageOnCollision : MonoBehaviour
     public bool isObstacle = false;
     public bool hasCollided = false;
     public bool destroyOnCollision = true;
+    public int scoreAmount = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,7 +45,7 @@ public class DamageOnCollision : MonoBehaviour
     {
         if (isObstacle)
         {
-            GameManager.IncreaseScore();
+            GameManager.IncreaseScore(scoreAmount);
             GameManager.gameManager.obstacleList.Remove(this);
         }
         Destroy(gameObject);

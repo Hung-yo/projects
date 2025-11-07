@@ -14,7 +14,7 @@ public class Shooter : MonoBehaviour
 
     }
     
-    public virtual void Shoot()
+    public virtual void Shoot(int powerLevel)
     {
         Debug.Log("Bang!");
     }

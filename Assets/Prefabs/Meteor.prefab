@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: -5857554250663381786}
   - component: {fileID: 5611878324216627392}
   - component: {fileID: -1785558116183890524}
-  - component: {fileID: -5794138643522698430}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Untagged
@@ -112,8 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   pawn: {fileID: 0}
-  moveSpeed: 2
+  moveSpeed: 4
   hasCollided: 0
+  pointToMoveTowards: {x: 0, y: 0, z: 0}
 --- !u!60 &2198910711624994130
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -209,8 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb1de8707616f845bd57d0d904bb9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHealth: 3
-  currentHealth: 3
+  maxHealth: 2
+  currentHealth: 2
   isInstaKill: 0
 --- !u!50 &-5857554250663381786
 Rigidbody2D:
@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathDestroy
   deathClip: {fileID: -1785558116183890524}
+  splitObject: {fileID: 3674787798134020483, guid: 126407f77f24f8344a2ace2d23317c44, type: 3}
 --- !u!82 &-1785558116183890524
 AudioSource:
   m_ObjectHideFlags: 0
@@ -340,103 +341,6 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &-5794138643522698430
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057512021155719951}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c6f6721f5939ee1439227f6387b4ae91, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: -1.25
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.426
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -561,8 +465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43aaa78d503a32f4eb14077fad723fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
-  maxHealth: 10
-  currentHealth: 0
+  maxHealth: 2
+  currentHealth: 2
   isInstaKill: 0
   health: {fileID: 1266819164357850412}
   healthImage: {fileID: 7848250061245613844}

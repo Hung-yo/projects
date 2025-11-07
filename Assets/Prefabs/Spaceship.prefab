@@ -105,14 +105,13 @@ GameObject:
   - component: {fileID: 1615479082955660942}
   - component: {fileID: 7308392780232397723}
   - component: {fileID: 6107676236220773909}
-  - component: {fileID: 5719694462002461043}
   - component: {fileID: 6193886587437688765}
   - component: {fileID: 1375204882247737853}
   - component: {fileID: 4795566314534996482}
   - component: {fileID: 4355661684614530268}
-  - component: {fileID: 4156352563211188623}
   - component: {fileID: 8949599086929609385}
   - component: {fileID: 7406121374427223134}
+  - component: {fileID: 9107970146520438873}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -212,18 +211,6 @@ MonoBehaviour:
   worldSpaceSpeed: 1
   health: {fileID: 0}
   death: {fileID: 0}
---- !u!114 &5719694462002461043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5238695495004585683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ddb2c4ccb6ef5045886f228764a7317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuitGame
 --- !u!114 &6193886587437688765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,19 +330,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4156352563211188623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5238695495004585683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e15e6c4b13fd0e34f90f6684a030bb72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeathDestroy
-  deathClip: {fileID: 7406121374427223134}
 --- !u!81 &8949599086929609385
 AudioListener:
   m_ObjectHideFlags: 0
@@ -461,6 +435,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9107970146520438873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238695495004585683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62670f19e5d21d4db9dff35d3adf4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathRecenter
+  deathClip: {fileID: 7406121374427223134}
 --- !u!1 &5739136251680694328
 GameObject:
   m_ObjectHideFlags: 0

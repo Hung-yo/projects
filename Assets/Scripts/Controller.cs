@@ -5,6 +5,7 @@ public class Controller : MonoBehaviour
     public Pawn pawn;
     public GameManager gameManager;
     public KeyCode shootKey = KeyCode.Space;
+    public float shootKeyTime;
     private Shooter shooter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +18,7 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.pawn == null)
+        if (gameManager.pawn == null || GameManager.isPaused || !GameManager.isGameStarted || GameManager.gameOver)
         {
             return;
         }
@@ -63,9 +64,48 @@ public class Controller : MonoBehaviour
                 pawn.TranslateHorizontally(pawn.worldSpaceSpeed);
             }
 
+            // Check if pawn is within bounds x -10 to 10, y -5 to 5, teleport them back if necessary
+            if (pawn.transform.position.x < -10)
+            {
+                pawn.TranslateHorizontally(.1f);
+            }
+
+            if (pawn.transform.position.x > 10)
+            {
+                pawn.TranslateHorizontally(-.1f);
+            }
+
+            if (pawn.transform.position.y < -5)
+            {
+                pawn.TranslateVertically(.1f);
+            }
+
+            if (pawn.transform.position.y > 5)
+            {
+                pawn.TranslateVertically(-.1f);
+            }
+
             if (Input.GetKeyDown(shootKey))
             {
-                shooter.Shoot();
+                shootKeyTime = 0f; // Start keeping track of hold time
+            }
+
+            if (Input.GetKey(shootKey))
+            {
+                shootKeyTime += Time.deltaTime; // Increase hold time
+            }
+
+            if (Input.GetKeyUp(shootKey))
+            {
+                if (shootKeyTime >= 1f)
+                {
+                    shooter.Shoot(2); // Fire big bullet if held for 1 second or more
+                }
+                else
+                {
+                    shooter.Shoot(1); // Fire normal bullet if not held down long enough
+                }
+                shootKeyTime = 0f; // Reset timer
             }
         }
     }

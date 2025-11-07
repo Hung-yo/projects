@@ -125,6 +125,7 @@ MonoBehaviour:
   isObstacle: 0
   hasCollided: 0
   destroyOnCollision: 1
+  scoreAmount: 0
 --- !u!60 &2594517179225011159
 PolygonCollider2D:
   m_ObjectHideFlags: 0

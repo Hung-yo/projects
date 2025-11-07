@@ -5,20 +5,22 @@ public class Meteor : MonoBehaviour
     public Pawn pawn;
     public float moveSpeed;
     public bool hasCollided = false;
+    public Vector3 pointToMoveTowards;
     // public float rotationSpeed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pawn = GameManager.gameManager.pawn;
+        pointToMoveTowards = pawn.transform.position * 100f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (pawn != null && GameManager.isPaused == false)
+        if (pawn != null && GameManager.isPaused == false && GameManager.isGameStarted && GameManager.gameOver == false)
         {
-            MoveTowards(pawn);
+            MoveTowards(pointToMoveTowards);
         }
     }
 
